@@ -1,0 +1,25 @@
+[project]
+name = "tinyq"
+version = "0.1.0"
+description = "Hardware-aware quantized inference lab for tiny signal classifiers."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy>=2.0",
+  "torch>=2.6",
+  "onnx>=1.17",
+  "onnxruntime>=1.20",
+  "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+tinyq = "tinyq.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
