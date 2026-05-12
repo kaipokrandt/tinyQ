@@ -45,8 +45,8 @@ TinyQ uses PyTorch's stable TorchScript-based ONNX exporter because the generate
 Use Python 3.11 or 3.12.
 
 ```powershell
-git clone https://github.com/kaipokrandt/tinyq.git
-cd tinyq
+git clone https://github.com/kaipokrandt/tinyQ.git
+cd tinyQ
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -U pip
